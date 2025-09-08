@@ -107,3 +107,14 @@ jobs:
       - name: Run Container
         run: |
           docker run -d -p 9000:9000 --name bankapp $IMAGE_NAME:latest
+
+
+- name: Notify Slack
+  if: failure()
+  uses: slackapi/slack-github-action@v1.23.0
+  with:
+    channel-id: 'C12345678'
+    slack-message: 'CI/CD pipeline failed for ${{ github.workflow }}'
+  env:
+    SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+

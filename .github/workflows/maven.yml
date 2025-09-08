@@ -102,7 +102,7 @@ jobs:
           username: ${{ vars.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Pull Docker Image
-        run: docker pull abishekn01/bankapp:latest
+        run: docker pull abishekn01/bankingapp:latest
 
   Deploy:
     runs-on: ubuntu-latest

@@ -97,9 +97,3 @@ jobs:
       - name: Pull Docker Image
         run: docker pull $IMAGE_NAME:latest
 
-
-    channel-id: 'C12345678'
-    slack-message: 'CI/CD pipeline failed for ${{ github.workflow }}'
-  env:
-    SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-

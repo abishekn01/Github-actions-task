@@ -74,7 +74,6 @@ jobs:
         with:
           name: app-jar
           path: app  # JAR will be in ./app folder    
-
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
 

@@ -90,7 +90,7 @@ jobs:
           context: .
           push: true
           tags: abishekn01/bankapp:latest
-          file: ./Dockefile
+          file: ./Dockerfile
           
   Docker_Pull:
     runs-on: ubuntu-latest

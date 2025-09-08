@@ -89,7 +89,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: abishekn01/bankapp:latest
+          tags: abishekn01/bankingapp:latest
           file: ./Dockerfile
           
   Docker_Pull:

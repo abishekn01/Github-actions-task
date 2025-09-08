@@ -110,4 +110,4 @@ jobs:
     steps:
       - name: Run Container
         run: |
-          docker run -d -p 9000:9000 --name bankapp abishekn01/bankapp:latest
+          docker run -d -p 9000:9000 --name bankapp abishekn01/bankapping:latest
